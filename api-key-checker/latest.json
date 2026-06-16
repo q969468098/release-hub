@@ -1,0 +1,11 @@
+{
+  "version": "1.5.0",
+  "notes": "初始发布版本",
+  "pub_date": "2026-06-16T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "",
+      "url": "https://q969468098.github.io/release-hub/downloads/api-key-checker_1.5.0_x64-setup.msi"
+    }
+  }
+}
