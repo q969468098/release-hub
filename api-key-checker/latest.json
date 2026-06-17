@@ -1,11 +1,11 @@
 {
-  "version": "1.5.0",
-  "notes": "初始发布版本",
-  "pub_date": "2026-06-16T00:00:00Z",
+  "version": "2.0.0",
+  "notes": "v2.0.0: 自动更新功能上线 · 签名验证 · 一键更新按钮 · 缓存共享(sccache)",
+  "pub_date": "2026-06-17T00:26:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "",
-      "url": "https://q969468098.github.io/release-hub/downloads/api-key-checker_1.5.0_x64-setup.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzQ2clc0aDFmN1ZhUEQxZHdnN1l4RGxoREtWK0xJc2Q2aW5VV0RTbGp4c2YwRk1nNTQ3NDVhVnpwUHZQd3V3ejhVVVBPT1BWMFd4UWFyRm1pV1poNGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNjU2MDExCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4wLjBfeDY0LXNldHVwLmV4ZQpHeEo4OGlZQURKazR1cERCT1Q5bnBoa2JoNnhsN2ZQV2JubEF5MmxjNVVWbUQ1LzlCdTA1dWJyUzdXczN5UHVwaG9mS0w0NFFRckttU2ZSWUlBdGpEQT09Cg==",
+      "url": "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.0.0_x64-setup.exe"
     }
   }
 }
