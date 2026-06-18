@@ -1,11 +1,11 @@
 {
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzRjMEZFaEJzK0xyVFFEN0lOQmcrcVBIZG80RnN3NzR5aGtsU1RMRW5EaUozUUZJSWpOV3RHeHFPanhDWTdSSlVuMGhTRXhVOUpNUEFMMTdkOEE2TkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzQ0MjM3CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4xLjBfeDY0LXNldHVwLmV4ZQpyWGtPNWJISXgrQmNVUk1kOWVrVGQ2U3FFeW5zUzhYbWdyNGhEV1JJV3ZRZXVNZlpyNS9VQlJSMmhuZ1JTaHVGMjRYWUtGRDdscXlLTFp4S0tMdi9Cdz09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.1.0_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzM4MmlzdGZxRXpUM3VYYmZqMHJrTE1XNGE5L25kYkY2VTlhbStvQ1R6ZGhJWVppYThmQTN1UzRDZVBqNE5DSk14UGR6dGZ5MHNjcWJMYVU4NlhEcndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzY3NDExCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4yLjBfeDY0LXNldHVwLmV4ZQo2cHc4Tk1aZkUwSDJSa1JvU3RHQSt6dHpmWElOZklLK0hRb3l0cFV0UGlpb3hsbUgvV05yMEdrRXJIN1FXb2ZlWmRIeDBXSnNURW1oMUMrQkhlSkxDUT09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.2.0_x64-setup.exe"
                                          }
                   },
-    "pub_date":  "2026-06-18T00:57:17Z",
-    "version":  "2.1.0",
-    "notes":  "v2.1 更新内容：\n\n1. 在线自动更新\n   - 启动时自动检测新版本\n   - 状态栏显示更新状态，有新版本时按钮脉冲高亮\n   - 一键下载安装，自动重启\n\n2. 内置供应商预设\n   - 首次安装即自带常用供应商（DeepSeek、智谱GLM、通义千问、OpenAI\n     硅基流动、火山引擎、月之暗面 等）\n   - 点击即填，无需手动输入 API 地址\n\n3. UI 优化\n   - 界面布局更紧凑，信息密度提升\n   - 窗口尺寸自动记忆，下次打开恢复\n   - Claude Code 缓存 TTL 写入时自动设置\n\n4. 安装包改用 NSIS 格式\n   - 解决部分系统 WiX 报错无法安装的问题\n\n5. 修复\n   - 更新签名验证逻辑\n   - ACL 权限配置完善"
+    "pub_date":  "2026-06-18T07:23:31Z",
+    "version":  "2.2.0",
+    "notes":  "v2.2.0 更新内容：\n\n1. 配置同步 UX 全面优化\n   - 检测结果从三张大卡片改为筛选栏右侧一行摘要，省出大量纵向空间\n   - 模型列表改为紧凑三列网格（窄屏自动 2 列 → 1 列）\n   - Claude Code / 桌面版 标签页切换时仅显示对应配置，不再同时展示两个面板\n   - 默认模型和 Effort 选择器直接显示在主表单，不再藏在高级设置里\n   - 桌面版提示文字与按钮合并为一行（flex-wrap 窄屏自动换行）\n\n2. Claude Code 一键启动\n   - 新增\"打开 Claude Code\"按钮（新 PowerShell 窗口启动，不影响已有会话）\n   - 新增\"重启 Claude 桌面版\"按钮（含进程检测 + 运行中确认提示）\n\n3. 自动压缩设置改进\n   - 新增 \"高级设置：自动压缩设置\" 带标题和说明，默认关闭\n   - 关闭时压缩字段隐藏，避免用户误以为已生效\n   - 关闭时传 null，不写入也不删除已有 compact 环境变量（修复之前传空字符串导致误删的 bug）\n   - 默认值改为 压缩窗口 1M、触发百分比 75%\n\n4. 按钮风格统一\n   - \"打开 Claude Code\"按钮与\"同步\"按钮风格一致\n   - 所有按钮统一圆角和颜色变量"
 }
