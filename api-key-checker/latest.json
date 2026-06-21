@@ -1,11 +1,11 @@
 {
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzM4MmlzdGZxRXpUM3VYYmZqMHJrTE1XNGE5L25kYkY2VTlhbStvQ1R6ZGhJWVppYThmQTN1UzRDZVBqNE5DSk14UGR6dGZ5MHNjcWJMYVU4NlhEcndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzY3NDExCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4yLjBfeDY0LXNldHVwLmV4ZQo2cHc4Tk1aZkUwSDJSa1JvU3RHQSt6dHpmWElOZklLK0hRb3l0cFV0UGlpb3hsbUgvV05yMEdrRXJIN1FXb2ZlWmRIeDBXSnNURW1oMUMrQkhlSkxDUT09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.2.0_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzFxSkVPSFhRM3paUGk1dlZ4ZDV4ejVNV28vTTloVkJUMm4vWFFWaVdGVUQwVFd2ZnBIcVVWRXJWK0prd1UxUWxYcFd0bFhhSDhxWlRHRUpCc1ZPNHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDcwOTc4CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4zLjBfeDY0LXNldHVwLmV4ZQpVeit2UFZtOEwzUFRjSWN4OUNrZkdRdlo3a054cEhMOVpnSUp3YXdTUzhpTkl3MWJNOTEyK0ZhQXFPcjlEa041ckRzaFZrR3RlSFN1R3IrdUd5WmtEUT09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.3.0_x64-setup.exe"
                                          }
                   },
-    "pub_date":  "2026-06-18T07:23:31Z",
-    "version":  "2.2.0",
-    "notes":  "v2.2.0 更新内容：\n\n1. 配置同步 UX 全面优化\n   - 检测结果从三张大卡片改为筛选栏右侧一行摘要，省出大量纵向空间\n   - 模型列表改为紧凑三列网格（窄屏自动 2 列 → 1 列）\n   - Claude Code / 桌面版 标签页切换时仅显示对应配置，不再同时展示两个面板\n   - 默认模型和 Effort 选择器直接显示在主表单，不再藏在高级设置里\n   - 桌面版提示文字与按钮合并为一行（flex-wrap 窄屏自动换行）\n\n2. Claude Code 一键启动\n   - 新增\"打开 Claude Code\"按钮（新 PowerShell 窗口启动，不影响已有会话）\n   - 新增\"重启 Claude 桌面版\"按钮（含进程检测 + 运行中确认提示）\n\n3. 自动压缩设置改进\n   - 新增 \"高级设置：自动压缩设置\" 带标题和说明，默认关闭\n   - 关闭时压缩字段隐藏，避免用户误以为已生效\n   - 关闭时传 null，不写入也不删除已有 compact 环境变量（修复之前传空字符串导致误删的 bug）\n   - 默认值改为 压缩窗口 1M、触发百分比 75%\n\n4. 按钮风格统一\n   - \"打开 Claude Code\"按钮与\"同步\"按钮风格一致\n   - 所有按钮统一圆角和颜色变量"
+    "pub_date":  "2026-06-21T19:42:59Z",
+    "version":  "2.3.0",
+    "notes":  "v2.3.0 更新内容：\n\n1. 过期/封禁提示中的联系方式同步机制改进\n   - 之前：expired/blocked 提示来自 CloudBase 服务端，修改联系方式需登录云函数后台\n   - 现在：Rust 后端自动用本地 contact.txt 拼装提示，重建 EXE 即生效\n   - 无需懂技术、无需登云函数，一键更新联系方式即可同步到所有提示场景"
 }
