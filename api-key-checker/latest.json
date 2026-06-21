@@ -1,11 +1,11 @@
 {
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzFxSkVPSFhRM3paUGk1dlZ4ZDV4ejVNV28vTTloVkJUMm4vWFFWaVdGVUQwVFd2ZnBIcVVWRXJWK0prd1UxUWxYcFd0bFhhSDhxWlRHRUpCc1ZPNHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDcwOTc4CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4zLjBfeDY0LXNldHVwLmV4ZQpVeit2UFZtOEwzUFRjSWN4OUNrZkdRdlo3a054cEhMOVpnSUp3YXdTUzhpTkl3MWJNOTEyK0ZhQXFPcjlEa041ckRzaFZrR3RlSFN1R3IrdUd5WmtEUT09Cg==",
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzI4UTdVNmk5M0p6eGljN3Bva21qaGtOMkliSFlvTmdHekFnT0l6UXQrbm9KZkk1MkxFbktzV3ZBQmN4VCtEamlHZ0FYd29NTENZREI1ZjFUYTd4c0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDcyMTg4CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4zLjBfeDY0LXNldHVwLmV4ZQp3bGxRZzFFVXFDbTVseEM5U2p4WUh4OVJVR0NNU1drb2dZL0pURi8yQ09kamhkd2l1OVRuSlNaQmwvVlFQQ2x0SlI4RU1TSFkyY3RGb0Q4NjkweUxEdz09Cg==",
                                              "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.3.0_x64-setup.exe"
                                          }
                   },
-    "pub_date":  "2026-06-21T19:42:59Z",
+    "pub_date":  "2026-06-21T20:03:09Z",
     "version":  "2.3.0",
-    "notes":  "v2.3.0 更新内容：\n\n1. 过期/封禁提示中的联系方式同步机制改进\n   - 之前：expired/blocked 提示来自 CloudBase 服务端，修改联系方式需登录云函数后台\n   - 现在：Rust 后端自动用本地 contact.txt 拼装提示，重建 EXE 即生效\n   - 无需懂技术、无需登云函数，一键更新联系方式即可同步到所有提示场景"
+    "notes":  "v2.3.0 更新内容：\n\n1. 过期/封禁提示中的联系方式同步机制改进\n   - 之前：expired/blocked 提示来自 CloudBase 服务端，修改联系方式需登录云函数后台\n   - 现在：Rust 后端自动用本地 contact.txt 拼装提示，重建 EXE 即生效\n   - 无需懂技术、无需登云函数，一键更新联系方式即可同步到所有提示场景\n\n2. 修复窗口大小记忆失效\n   - 之前：调大窗口后关闭重开，窗口无法记住上次大小，高 DPI 下还会越用越小\n   - 现在：改用 Tauri 官方 window-state 插件，窗口位置和大小自动记忆，关闭重开准确恢复"
 }
