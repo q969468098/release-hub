@@ -1,11 +1,11 @@
 {
+    "version":  "2.3.1",
+    "notes":  "v2.3.1 更新内容：\n\n1. 修复永久授权重启后仍要求激活\n   - 之前：永久付费授权重启后可能因本地缓存过期策略被要求重新激活\n   - 现在：永久授权支持长期本地恢复，重启后可直接进入已授权状态\n   - 试用/限期授权仍按短 TTL 或授权到期时间限制，避免越权长期使用\n\n2. 改进授权缓存错误诊断\n   - 授权缓存写入失败时不再静默忽略，会提示重启后可能需要重新激活\n   - 本地缓存损坏或签名异常时，会显示明确原因，便于排查\n   - 缓存仍使用 HMAC-SHA256 签名防篡改\n\n3. 修复 Claude 配置写入的稳定性问题\n   - 修复 settings.json 根节点或 env 字段类型异常时可能导致程序退出的问题\n   - 缓存 TTL 切换增加后端参数白名单校验，非法参数会直接返回错误\n\n4. 修复授权码生成器同步路径与提示\n   - Tauri/file/asset 等本地环境优先走 127.0.0.1:3456 本地代理\n   - 本地代理未启动或端口被占用时，前端会给出更明确的同步失败提示\n\n5. 同步发布配置与说明文档\n   - 版本号统一升级到 2.3.1\n   - 更新 README、发布检查清单、脚本说明与版本历史\n   - 修正 package 元数据，避免发布前版本信息不一致",
+    "pub_date":  "2026-07-06T19:02:25Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzh1TFZjZVZLMjVRVWdVWmpjTUxEb0Z2UFZSK1BteU1uK2c0Q3JpK1I5ZVY3c0o5ODBWWUFlOU10a0d5dGs2K0pmOGVFbWczTjZBejBKRkFaWmo4dndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDcyNTM5CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4zLjBfeDY0LXNldHVwLmV4ZQpoaGNyb3lyRjV6ZW1zcDVOVzNMejcwZ3VFaHRjRkxlY3pDaW51QWJCdk5nZjJLYlV4bGpaUFI1K3gwZUlEME5nSUV2Q3lHaUdNbjNRby83aHZSdkVBZz09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.3.0_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzFrNWlUTXExc3FnYlpyMFFTTTFOTFN3Q0ovdUJMOWNPREZha291K3V6QmtoYjExb2FhZW5DVlpuY1VjV1JlMWp1VU5uVkw0TFNLdDZnVXB0b2p1T3dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzY0NDkxCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi4zLjFfeDY0LXNldHVwLmV4ZQpYQUFjdlNIdzZQcGczNmdqdFJ5Ym1qb2hHV09sdjhCVGJYYnhpMUNUYW9DdEZ3M2dyV3lJdXFReEc4ZmZvNXNyeFhLVHdKOHVwckFQZ3lEdkU2ZStCUT09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.3.1_x64-setup.exe"
                                          }
-                  },
-    "pub_date":  "2026-06-21T20:08:59Z",
-    "version":  "2.3.0",
-    "notes":  "v2.3.0 更新内容：\n\n1. 过期/封禁提示中的联系方式同步机制改进\n   - 之前：expired/blocked 提示来自 CloudBase 服务端，修改联系方式需登录云函数后台\n   - 现在：Rust 后端自动用本地 contact.txt 拼装提示，重建 EXE 即生效\n   - 无需懂技术、无需登云函数，一键更新联系方式即可同步到所有提示场景\n\n2. 修复窗口大小记忆失效\n   - 之前：调大窗口后关闭重开，窗口无法记住上次大小，高 DPI 下还会越用越小\n   - 现在：改用 Tauri 官方 window-state 插件，窗口位置和大小自动记忆，关闭重开准确恢复"
+                  }
 }
