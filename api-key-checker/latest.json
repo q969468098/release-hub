@@ -1,11 +1,11 @@
 {
-    "version":  "2.4.0",
-    "notes":  "v2.4.0：新增 Codex/WorkBuddy/API配置管理 + DPAPI 加密，修复协议探测与 WorkBuddy 同步",
-    "pub_date":  "2026-07-08T15:59:56Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzVhS2FUdk5PYVB4bFJSRVkzTEZiOG1MOG9sbFNjVUFQTmJQTkp6dnBtVUhRUjA2TzQ3RE10eFdXU3pSRUZPUHlPVXNtdGRxMmRJSkZmT3E4QjNETVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTI2MDQ0CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi40LjBfeDY0LXNldHVwLmV4ZQoySndqY0NVSU1jZ0F0MGUxWWxUK3MxbDExWjE0cGRpdlpVb1JML0ZOSEhzakU2bmJjd1NCWkVMUUhjRFNHQ2ErblF4eUdOQ2M4MGFtZ0pjcWFsYVlCUT09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.4.0_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzZUVzNsRVVOQnhqVHFtb25RMjFTU2xaVk5oRzA3ekFDaUdQb3Y0bXFzL0s2QS9HQ2J6QjdKMWo0bHdCREFBY0tYV0d1RGdIdTE1cUJ1Tm1QMFNYcWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTc4MDY0CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMi40LjFfeDY0LXNldHVwLmV4ZQpWeTczVkF5eHdkVXhSVVVienJ4NnZwYzJ3RENScU14b3JoSktqUEF2cGdqOG9oLysyR3FVMVUvUzEwSnZzbVJqbDZ0cEJJdGZqVjBERG1TVE5QY3VDQT09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_2.4.1_x64-setup.exe"
                                          }
-                  }
+                  },
+    "pub_date":  "2026-07-09T06:21:04Z",
+    "version":  "2.4.1",
+    "notes":  "v2.4.1 更新内容（2026-07-09）：\n\n1. 新增 QClaw 集成\n   - 读取 QClaw 配置文件 (~/.qclaw/openclaw.json)\n   - 写入自定义模型到 QClaw（支持 openai-completions 和 anthropic-messages 两种 API 类型）\n   - 支持配置推理和图片能力标记\n   - 写入前自动备份配置文件\n\n2. 新增供应商卡片拖动排序\n   - 支持拖拽供应商卡片调整顺序\n   - 拖动时显示视觉反馈\n   - 排序结果自动保存到 localStorage\n\n3. Bug 修复\n   - 修复协议重测时错误提示失效（调用已删除的 apiConfigHint 元素）\n   - 清理 107 行死代码（API 配置管理功能已被历史记录替代）\n\n---\n\nv2.4.0 后续修复（2026-07-09）：\n\n1. 优化配置同步面板排版\n   - Codex / WorkBuddy 专属区域改为紧凑卡片布局\n   - 将长警告从字段右侧挤压位置移到独立提示行\n   - 模型、协议、推理强度等字段改为更清晰的两/三列表单\n\n2. 修复 Codex / WorkBuddy 模型选择来源\n   - Codex 模型名从 input + datalist 改为 select\n   - WorkBuddy 模型 id 从 input + datalist 改为 select\n   - 两者都只展示本次检测通过的可用模型，不再混入硬编码建议模型\n   - 缓存恢复时同步刷新 Claude / Codex / WorkBuddy 三处模型下拉\n\n3. 优化主检测页信息架构\n   - 主检测区卡片化，扩大内容宽度\n   - 新增第三方 API 入口移到主界面快捷栏\n   - Key 复用改由历史记录承担，不再额外自动保存 API 通讯录\n\n---\n\nv2.4.0 更新内容：\n\n1. 新增 Codex 集成\n   - 一键在第三方中转与官方配置之间切换（自动保留其他无关配置）\n   - 检查 Codex 相关环境变量状态（只显示\"已设置/未设置\"，不显示具体值）\n   - 只读取用户级配置文件，不改动系统其他设置\n\n2. 新增 WorkBuddy 集成\n   - 读取、写入、删除 WorkBuddy 模型配置\n   - 一键重启 WorkBuddy\n   - 同步地址优先使用检测时实测通过的完整地址，避免缺少 /v1 导致无法回复\n\n3. 新增 API 配置管理\n   - 保存多套 API 配置，随取随用，无需每次重新输入\n   - API Key 使用 Windows DPAPI 加密存储，仅当前用户可解密\n   - 支持备注、模型等字段\n\n4. 改进协议兼容性探测\n   - 自动兼容带 /v1 与不带 /v1 两种地址写法，逐一尝试直到命中\n   - 只需测试一个可用模型即可判定协议兼容性，加快检测速度\n\n5. Bug 修复\n   - 修复协议探测误判：部分中转站模型显示可用但协议检测全部失败（/v1 路径问题）\n   - 修复 WorkBuddy 同步地址缺少 /v1 导致无法正常回复的问题"
 }
