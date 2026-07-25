@@ -1,11 +1,11 @@
 {
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzRSSm5HVDV1dnJXMlA3TU8ybUtQc3NCc3NvTFM0NEhhU0N2U0Z1WXlMSjdIblZ5QTh0R1dHNjBMZnBFNVkwb0JXZEYwZGVTZzBURzQ1eGZCNjlLdEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0OTc4ODI4CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy40LjBfeDY0LXNldHVwLmV4ZQoxMjR1d3V4QU1aQ3A0TWVXMHM2cnFlK0NjZnQ4STJEaVRiSzlxWGhDbGRiOTh6WFRuYjB0bjZHa2lOOUllREkvNzZFM21PV3VZNUpBVjhjWjRRdXRCQT09Cg==",
-      "url": "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.4.0_x64-setup.exe"
-    }
-  },
-  "pub_date": "2026-07-25T11:27:09Z",
-  "version": "3.4.0",
-  "notes": "v3.4.0 更新内容（2026-07-25）：\n\n- Codex 官方账号与模型线路分开管理：使用第三方 API 时保留官方登录，额度恢复后一键切回，无需重新登录。\n- 官方与第三方共用同一套 Codex 任务历史和本地记忆；可通过“合并现有历史”整合旧记录，操作前自动备份，失败自动恢复。\n- 已保存的 API Key 会在重检或载入来源时自动加载，并提供显示、隐藏和更换入口。\n- 使用提醒：切换前需完全退出 Codex；目前不会自动检测官方额度或自动切线，第三方网关需支持 OpenAI Responses API。"
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kK3dzdU5kaGZNeUlNc25ySk95dGJIZGE3MjhBTXV1Vk9ib3UvM0FZWEZLQUpjcUd4UUVVamlXN1FRQWFkbUlMNFVsRnBCcWEyNGF0a0pxWkRJaDdUREE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0OTg2NDcxCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy40LjFfeDY0LXNldHVwLmV4ZQpSZG1HTW5UTEFTYm9XdFU4L2w4RUdQOTdnNDdPa2M4Ylgya0FYOFdrVHZmWmR1dEdBcm10RHJBWWVHelZRV1pFWjE2OTRDQ0I0K2o4YnQ2Y3pLaHdCUT09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.4.1_x64-setup.exe"
+                                         }
+                  },
+    "pub_date":  "2026-07-25T13:34:32Z",
+    "version":  "3.4.1",
+    "notes":  "提升更新功能的稳定性和离线可用性。\r\n支持签名内容更新：使用说明、版本历史和默认供应商可无需重新安装直接更新"
 }
