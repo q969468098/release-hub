@@ -1,11 +1,11 @@
 {
+    "version":  "3.4.2",
+    "notes":  "修复软件已打开时点击“更新”没有即时反应的问题，无需关闭重开即可正常检查。\n更新入口现在会立即显示检查进度，并同时检查内容更新和 APP 新版本。",
+    "pub_date":  "2026-07-25T17:09:45Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kK3dzdU5kaGZNeUlNc25ySk95dGJIZGE3MjhBTXV1Vk9ib3UvM0FZWEZLQUpjcUd4UUVVamlXN1FRQWFkbUlMNFVsRnBCcWEyNGF0a0pxWkRJaDdUREE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0OTg2NDcxCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy40LjFfeDY0LXNldHVwLmV4ZQpSZG1HTW5UTEFTYm9XdFU4L2w4RUdQOTdnNDdPa2M4Ylgya0FYOFdrVHZmWmR1dEdBcm10RHJBWWVHelZRV1pFWjE2OTRDQ0I0K2o4YnQ2Y3pLaHdCUT09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.4.1_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzlRbDF0aS96dHJIejkxZTY1TFFLQ29ZOGQra3QxZXpIaDJGWkVQclBBM2krRGJDZ2JwdlZ3Z1d6NzM1SUdBODd2VjVqVXhLLzNsVjQvQ3RFUTNNUFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0OTk5MjI3CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy40LjJfeDY0LXNldHVwLmV4ZQpqUHBBdGVPcU96RXlTUWxpRXhRbnphNVg3TGU4RndBQzErQnRIbW5HT0YzbVk1SDRQNFNjcnhwM2JxOHRDZHVNQ3pqYkwvWGhOYlhxL1B6UlI3dUlBZz09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.4.2_x64-setup.exe"
                                          }
-                  },
-    "pub_date":  "2026-07-25T13:34:32Z",
-    "version":  "3.4.1",
-    "notes":  "提升更新功能的稳定性和离线可用性。\r\n支持签名内容更新：使用说明、版本历史和默认供应商可无需重新安装直接更新"
+                  }
 }
