@@ -1,11 +1,11 @@
 {
-    "version":  "3.4.2",
-    "notes":  "修复软件已打开时点击“更新”没有即时反应的问题，无需关闭重开即可正常检查。\n更新入口现在会立即显示检查进度，并同时检查内容更新和 APP 新版本。",
-    "pub_date":  "2026-07-25T17:09:45Z",
-    "platforms":  {
-                      "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzlRbDF0aS96dHJIejkxZTY1TFFLQ29ZOGQra3QxZXpIaDJGWkVQclBBM2krRGJDZ2JwdlZ3Z1d6NzM1SUdBODd2VjVqVXhLLzNsVjQvQ3RFUTNNUFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0OTk5MjI3CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy40LjJfeDY0LXNldHVwLmV4ZQpqUHBBdGVPcU96RXlTUWxpRXhRbnphNVg3TGU4RndBQzErQnRIbW5HT0YzbVk1SDRQNFNjcnhwM2JxOHRDZHVNQ3pqYkwvWGhOYlhxL1B6UlI3dUlBZz09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.4.2_x64-setup.exe"
-                                         }
-                  }
+  "version": "3.4.3",
+  "notes": "供货商、已保存 Key、检测历史、授权缓存和其他运行数据现在统一保存在 `%LOCALAPPDATA%\\APIKeyChecker`，不再散落在多个相似目录。\n升级时仅在新目录缺少对应文件时复制旧数据；不会覆盖新目录已有文件，也不会删除或联动修改旧文件。",
+  "pub_date": "2026-07-25T23:59:34Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kK3lMem1YRDdRQVp1TGJ1bGhCVHJxY3FGNEVqaWV5NjlwQmdEc3pMSUJYbVA1Skp6UTdnZy9mR1hKY2tXM2hzZ01iL2hNOTlOMU4wYzF0NHpiTWJHY3dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MDIzNjMwCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy40LjNfeDY0LXNldHVwLmV4ZQo2VzEyZGl1dXREbzZ5TFhKOGlWL003Wm1WdWM3Vkd5em5xRkVXVFN4VGRPMkRVZjRwaDRqTTNRdDhTeUxtZWJKVHhqYXNia2dqTkR1dk1Vc2V5UVVBQT09Cg==",
+      "url": "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.4.3_x64-setup.exe"
+    }
+  }
 }
