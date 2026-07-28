@@ -1,11 +1,11 @@
 {
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKzc3enNJN0REemNCdnFrR09zOWZZanRvVXNTSS9HMWJUVjRNU0ZrV1hHVUhQbk5ORnJleVkrRzE5REd4ZVBmSGtXbG9NVlRYaE53STJqa0lOZk8xSHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MjA1OTQzCWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy42LjFfeDY0LXNldHVwLmV4ZQpMRndValFaQ21jWHJxbndBdU9vblhkVUIrWkR5TlZ4ekh1VWJYT3VGWGxKQ1R6UjZUZ01acW85YmVMakRWbHg1RDZoUEtNdTNkRnllNXUrWlZrV3ZEUT09Cg==",
-                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.6.1_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUFFkc0piek5kKy8wRkwxdkZBeUI5N1FMS0k3TzRDeko0TGROM0diZkt4aGVwQmRDaVNpOXNRTVA4Um9PWjVoMDBnekpucG15ZlV3cEtmZGVhbW1PK3k0RUVOY2ZaU1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MjE5NzU3CWZpbGU6QVBJIEtleSDmo4DmtYvlmahfMy42LjJfeDY0LXNldHVwLmV4ZQpTMm0vcjFEQWsyTGtISTZydE9LV2V5V2VvcFpManowTjZxd2pabjFoQVlDTGxBTCsrMFpJSllsNGQ2R3FBblBUYVRKVkg2NlVTWmMvbXIxeTFkMWlCdz09Cg==",
+                                             "url":  "https://q969468098.github.io/release-hub/downloads/api-key-checker_3.6.2_x64-setup.exe"
                                          }
                   },
-    "pub_date":  "2026-07-28T02:32:24Z",
-    "version":  "3.6.1",
-    "notes":  "本次待发布更新：\n\n恢复 Codex 配置同步的默认目录行为：配置同步、历史合并、永久备份和本地记忆统一使用 `%USERPROFILE%\\.codex`，不再采用 v3.5.0 的 `CODEX_HOME` 四级解析。\n\n修复 Codex 安装检测：空的 .codex 目录不再被误判为已安装；只有实际状态文件或已安装的 Codex CLI 才会启用同步操作。\n\n恢复 Codex 同步页：重新显示官方登录、模型线路、本地记忆、历史列表和永久备份状态；恢复“合并现有历史”、运行时写入锁定以及官方/第三方切换入口。\n\n恢复 API 检测页的 Key 更换体验：从历史或同步来源自动回填时显示“已自动加载”，手动编辑显示“已修改”；点击“更换 Key”会显示并全选旧 Key，检测成功后才覆盖本机加密保存值。\n\nClaude Code 同步页新增「配置说明」按钮：点开可看到上下文长度、自动压缩、压缩窗口、触发百分比分别写进哪个配置项、各自什么含义，以及两个容易踩的坑。\n修正触发百分比的标注：Claude Code 的真实默认是「上限减 13000」，1M 时约 98.7%。原先把 75% 写成「默认推荐」会让人误以为和不勾选是一样的效果。\r\n触发百分比新增「不设置」选项，现在可以只覆盖压缩窗口、让触发时机跟随 Claude Code 默认；同时移除了实际无效的 100% 选项。\r\n同步页排版整理：自动压缩的两个开关并到一行，压缩窗口和触发百分比并到一行，按钮样式统一。\r\n修复使用说明弹窗标签页鼠标悬停没有反应的问题。"
+    "pub_date":  "2026-07-28T06:22:37Z",
+    "version":  "3.6.2",
+    "notes":  "- 修复 API 检测历史重复：同一次检测即使自动在根路径与 `/v1` 之间修正地址，也只保留一条历史记录。\n- 首次打开历史记录时，已确认属于同一来源的旧重复项会自动整理；整理前原文件会保留为 `history.json.bak`，可随时恢复。\n- 不同已保存来源不会因为地址、报告编号或 Key 尾号相同而自动合并，避免误合并不同 Key。"
 }
